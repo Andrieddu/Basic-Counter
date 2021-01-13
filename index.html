@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Andrea Lai | Counter</title>
+        <link href="images/favicon.png" rel="shortcut icon" type="image/png">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <!-- Boostrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+        <!-- Fontawesome -->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    
+        <!-- Link to stylesheet -->
+        <link href="style.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <!-- Welcome -->
+
+        <div class="container padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h1 class="display-4">Ciao, welcome back!</h1>
+                </div>
+                <div class="col-12">
+                    <h1>
+                        <span class="typewrite" data-period="2000" data-type='[ "Do you remember me?", "I am Andrea.", "How are you?", "This is my first counter, have fun!" ]'>
+                            <span class="wrap"></span>
+                        </span>
+                    </h1>
+                </div>
+                <div>
+                    <img class="avatar" src="images/avatar.svg">
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <!-- Counter -->
+
+        <div class="container padding">
+            <div class="row counter text-center padding">
+                <div class="col">
+                    <input type="button" id="plus" class="btn btn-primary" onclick="minus()" value="-">
+                </div>
+                <div class="col">
+                    <input type="text" id="count" placeholder="0" class="form-control col">
+                </div>
+                <div class="col">
+                    <input type="button" id="minus" class="btn btn-primary" onclick="plus()" value="+">
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <!--- Social Section -->
+        <section id="connect">
+            <div class="container-fluid padding">
+            <div class="row text-center">
+                    <div class="col-12">
+                            <h2>Contact me</h2>
+                    </div>
+                    <div class="col-12 social padding">
+                            <a href="https://www.facebook.com/andrea.lai.988/"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/andrea-lai-82335a115/"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:laiandrea2@gmail.com.com"><i class="fas fa-envelope"></i></a>
+                            <a href="https://www.instagram.com/andri3ddu/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/Andrieddu"><i class="fab fa-github"></i></a>
+                    </div>
+            </div>
+            </div>
+        </section>
+
+        <!--- Footer -->
+        <footer>
+        <div class="container padding">
+        <div class="row text-center">
+                <div class="col-12">
+                        <hr class="light-100">
+                        <h5>&copy; 2020 | Andrea Lai</h5>
+                </div>
+        </div>
+        </div>
+        </footer>
+
+        <!-- Counter Script -->
+        <script src="script.js"></script>
+
+    </body>
+</html>
